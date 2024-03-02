@@ -20,6 +20,15 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(obj1.substract(), -6)
         self.assertEqual(obj2.substract(), -20)
         self.assertEqual(obj3.substract(), 55)
+        
+    def test_multiply(self):
+        obj1 = Calculator(3, 9)
+        obj2 = Calculator(-10, 10)
+        obj3 = Calculator(0, -55)
+
+        self.assertEqual(obj1.multiply(), 27)
+        self.assertEqual(obj2.multiply(), -100)
+        self.assertEqual(obj3.multiply(), 0)
 
 if __name__ == '__main__':
     unittest.main()

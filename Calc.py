@@ -7,6 +7,8 @@ class Calculator:
         return self.x + self.y
     def substract(self):
         return self.x - self.y
+    def multiply(self):
+        return self.x * self.y
 
 
     
