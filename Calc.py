@@ -9,10 +9,15 @@ class Calculator:
         return self.x - self.y
     def multiply(self):
         return self.x * self.y
+    def division(self):
+        if self.x == 0 or self.y == 0:
+            return None
+        else:
+            return self.x / self.y
 
 
     
     
 
-object1 = Calculator(8, 1);
-print(object1.add())
+object1 = Calculator(8, 0);
+print(object1.division())
