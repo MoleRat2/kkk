@@ -33,11 +33,11 @@ class TestCalc(unittest.TestCase):
     def test_division(self):
         obj1 = Calculator(9, 2)
         obj2 = Calculator(-10, 10)
-        obj3 = Calculator(0, -55)
+        obj3 = Calculator(0, 0)
 
         self.assertEqual(obj1.division(), 4.5)
         self.assertEqual(obj2.division(), -1)
-        self.assertEqual(obj3.division(), None)
+        self.assertEqual(obj3.division(), 'На 0 ділити ніні')
 
 if __name__ == '__main__':
     unittest.main()
