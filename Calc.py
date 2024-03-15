@@ -1,4 +1,4 @@
-#Calculator
+#Calculator продовжує роботу 
 class Calculator:
     def __init__(self, x, y):
         self.x = x
