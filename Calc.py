@@ -10,10 +10,13 @@ class Calculator:
     def multiply(self):
         return self.x * self.y
     def division(self):
-        if self.x == 0 or self.y == 0:
-            return None
-        else:
-            return self.x / self.y
+        try:
+            r = self.x / self.y
+        except ZeroDivisionError:
+            r = ('На 0 ділити ніні')
+        finally:
+            return r
+ 
 
 
     
